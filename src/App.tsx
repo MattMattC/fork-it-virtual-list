@@ -57,21 +57,25 @@ const NavButtons = () => {
 
   return (
     <Box p={4}>
-      <Box mb={2}>nodes: {nodeCount}</Box>
+      <Box mb={2} fontSize={40}>
+        nodes: {nodeCount}
+      </Box>
 
-      <Box mb={2}>Nb users: {users.length}</Box>
+      <Box mb={2} fontSize={40}>
+        Nb users: {users.length}
+      </Box>
       <Button as={Link} to="/simple-list" mr={2} colorScheme={"blue"}>
         Simple List
       </Button>
 
       {/* TODO: deactive */}
-      {/* <Button
+      <Button
         as={Link}
         to="/virtual-list"
         colorScheme={location.pathname === "/virtual-list" ? "blue" : "gray"}
       >
         Virtual List
-      </Button> */}
+      </Button>
     </Box>
   );
 };

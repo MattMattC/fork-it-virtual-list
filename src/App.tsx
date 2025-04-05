@@ -57,12 +57,12 @@ const NavButtons = () => {
 
   return (
     <Box p={4}>
-      <Box mb={2} fontSize={40}>
+      <Box mb={2} fontSize={60}>
         nodes: {nodeCount}
       </Box>
 
-      <Box mb={2} fontSize={40}>
-        Nb users: {users.length}
+      <Box mb={2} fontSize={60}>
+        People number: {users.length}
       </Box>
       <Button as={Link} to="/simple-list" mr={2} colorScheme={"blue"}>
         Simple List

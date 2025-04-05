@@ -10,9 +10,7 @@ interface UserDayVisibility {
 interface UserDaysContextType {
   users: User[];
   deleteDay: (userId: number, dayIndex: number) => void;
-  // Récupérer l'état de visibilité d'un jour spécifique
   isDayVisible: (userId: number, dayIndex: number) => boolean;
-  // Basculer la visibilité d'un jour
   toggleDayVisibility: (userId: number, dayIndex: number) => void;
 }
 
@@ -34,7 +32,11 @@ interface UserDaysProviderProps {
   children: ReactNode;
 }
 
-const NB_USERS = 100;
+// TODO :
+
+const NB_USERS = 30;
+
+// TODO :
 
 export const UserDaysProvider: React.FC<UserDaysProviderProps> = ({
   children,

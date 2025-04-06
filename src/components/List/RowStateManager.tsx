@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import Row from "./Row";
 import RowPlaceholder from "./RowPlaceholder";
+import { fa } from "@faker-js/faker";
 
 interface RowStateManagerProps {
   userId: number;
@@ -25,7 +26,7 @@ const RowStateManager: React.FC<RowStateManagerProps> = ({
   days = [],
 }) => {
   // TODO :
-  const [showFullContent, setShowFullContent] = useState(true);
+  const [showFullContent, setShowFullContent] = useState(false);
 // TODO :
   useEffect(() => {
     const timeoutId = setTimeout(() => {

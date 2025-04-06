@@ -55,16 +55,16 @@ export const Cell = ({
 
           {/* <Marker color="blue" /> */}
 
-          {/* <MarkerList>
+          <MarkerList>
             <Marker color="blue" />
             <Marker color="red" />
             <Marker color="green" />
-          </MarkerList> */}
+          </MarkerList>
 
-          {/* <Box display="flex" flexDirection="column">
+          <Box display="flex" flexDirection="column">
             <Text fontSize="10px">{startTime}</Text>
             <Text fontSize="10px">{stopTime}</Text>
-          </Box>  */}
+          </Box> 
         </Box>
       </div>
     </Box>

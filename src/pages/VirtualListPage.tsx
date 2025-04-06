@@ -55,6 +55,7 @@ const VirtualListPage = () => {
         style={{ height: "100%", width: "100%" }}
         totalCount={users?.length}
         fixedItemHeight={80}
+        overscan={{ main: 10, reverse: 10 }}
         fixedHeaderContent={() => <StickyHeader />}
         itemContent={(index) => (
           <RowStateManager

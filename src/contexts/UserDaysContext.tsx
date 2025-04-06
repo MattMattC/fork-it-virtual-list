@@ -34,7 +34,7 @@ interface UserDaysProviderProps {
 
 // TODO :
 
-const NB_USERS = 30;
+const NB_USERS = 1000;
 
 // TODO :
 
